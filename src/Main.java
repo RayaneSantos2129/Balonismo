@@ -1,43 +1,18 @@
 public class Main {
     public static void main(String[] args) {
-        //Criar objeto Pessoa
-        Pessoa Fernanda = new Pessoa();
-        Pessoa Carlos = new Pessoa();
-        Pessoa Luisa = new Pessoa();
-        Pessoa Jonatas = new Pessoa();
 
-        //Declaração de objeto
-        Pessoa qualquer;
+        // construindo balões
+        Balao b1 = new Balao();
 
-        //Instanciação de objeto
-        qualquer = new Pessoa();
-        Pessoa adulta = new Pessoa();
+        //chamado o método voar()
+        String resultado = b1.voar (new combustivel());
 
-        //Definir forma do objeto
-        qualquer.nome = "Fernanda";
+        // exibindo o resultado do voo
+        System.out.println(resultado);
 
-        //Definir comportamento do objeto
-        qualquer.voa();
-        qualquer.voa("Pessoa viaja");
-
-
-        //Criar objeto Piloto
-        Piloto  = new Piloto();
-        //Definir forma do objeto
-        Piloto = "JoaoMiguel";
-        //Definir comportamento do objeto
-        Piloto.pilotar();
-        Piloto.pilotar("Piloto Pilota");
-
-
-        //Criar objeto Balao
-        Balao = new Balao();
-        //Definir forma do objeto
-        Balao = "293899";
-        //Definir comportamento do objeto
-        Balao.voa();
-        Balao.voa("Voar");
-
+        Balao b2 = new Balao(10, "rosa", "grande", 1.43, 23.65, "grande", 4 );
+        Balao b3 = new Balao(12, "verde", "pequeno", 1.21, 78.92, "medio", 12);
+        
 
     }
 }
